@@ -125,7 +125,7 @@ The three-section structure came through cleanly on both transcripts without any
 
 On Transcript 1, the model labeled Prasanna a "Full Stack Engineer" when the entire interview was clearly frontend-heavy. Node.js and .NET Core were mentioned briefly in the intro but were never explored in the conversation. The model had no instruction to distinguish what the interview tested from what the candidate listed on their resume, so it just scanned the introduction and picked the broadest available label. On Transcript 2, the summary invented a "willingness to learn and take feedback" trait that does not appear anywhere in the transcript. The candidate received feedback from the interviewer at the very end, but that is not the same as demonstrating a trait in the interview. With no grounding constraint, the model filled gaps by being generous rather than honest.
 
-### What will Changed for Iteration 2 :
+### What  Changed for Iteration 2 :
 
 Added a hard constraint telling the model not to invent skills or traits not evidenced in the transcript. Also added a justification requirement for the profile section to push the model past surface-level resume reading toward reasoning about what the interview actually covered.
 
@@ -259,7 +259,7 @@ The hallucination on Transcript 2 was gone. The "willingness to learn" invention
 
 Transcript 1 still came back as "Full Stack Engineer" despite adding a justification requirement. The 2-3 sentence cap turned out to be the problem: with that little space to fill, the model defaulted to listing resume technologies rather than reasoning about which ones the interview actually tested. It never had to ask whether Node.js and .NET Core were explored in the conversation at all, so the wrong label survived again. On Transcript 2, the profile contained a direct internal contradiction: one sentence said the candidate had "the ability to communicate complex ideas" while the next flagged communication as a concern. The prompt gave the model no mechanism to catch inconsistency within a single section. The summary ending with "may require some coaching to reach their full potential" was also a non-answer that told a hiring team nothing actionable.
 
-### What will Changed for Iteration 3 :
+### What Changed for Iteration 3 :
 
 Expanded the profile justification from 2-3 sentences to 3-5 sentences so the model had enough room to actually reason through the evidence rather than just list it. Moved the persona into a proper system instruction to separate voice from task instructions and keep it consistent across runs. Added explicit evaluation criteria for non-technical candidates so Transcript 2 had a real framework to work with. Added language in the system instruction explicitly blocking filler phrases and generic closers.
 
