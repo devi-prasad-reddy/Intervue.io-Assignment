@@ -51,8 +51,7 @@ Then run `source .env` before the script. The `.env` file is in `.gitignore` and
 ## How to run
 
 ```bash
-python summarizer.py sample_transcript_assignment_1.txt
-python summarizer.py sample_transcript_assignment_2.txt
+python summarizer.py <sample_transcript file>
 ```
 
 The summary prints directly to the terminal in this format:
@@ -83,9 +82,6 @@ interview-summarizer/
 ├── summarizer.py                        # Main script
 ├── prompt_iterations.md                 # Three prompt iterations with outputs
 ├── README.md                            # This file
-├── .gitignore
-├── sample_transcript_assignment_1.txt
-└── sample_transcript_assignment_2.txt
 ```
 
 ---
