@@ -428,4 +428,16 @@ The Transcript 1 summary still closed with "making them a promising candidate fo
 
 ### What Would Change in Iteration 4
 
-The role classification on Transcript 1 finally corrected to "Frontend Engineer." The longer justification window forced the model to work through what the interview actually covered rather than reading the resume introduction and stopping. Once it had to fill 3-5 sentences, it had to engage with the substance of each topic section, and that substance pointed clearly to frontend work throughout the entire conversation. On Transcript 2, the communication flag was stated directly and tied to a specific, observable pattern from the transcript rather than being softened into vague "room for improvement" language. Splitting the persona into a system instruction also made the evaluative voice more consistent across both runs without needing to repeat the same grounding instructions inside the user prompt each time.
+Why This Is the Final Version
+
+Iteration 3 resolves the major issues observed in earlier versions. Iteration 1 lacked constraints, leading to hallucinations and shallow summaries. Iteration 2 reduced hallucinations and improved structure but still produced incorrect role classifications and inconsistent reasoning due to limited justification space.
+
+Iteration 3 addresses these by:
+
+-> enforcing stronger grounding in transcript evidence.
+->expanding reasoning space for accurate role classification.
+->separating system behavior from task instructions for consistency.
+
+Most importantly, this version performs well across both transcripts: it correctly identifies frontend specialization in Transcript 1 and captures operational and stakeholder complexity in Transcript 2 without introducing unsupported claims.
+
+While minor issues like generic phrasing remain, the prompt is sufficiently robust, consistent, and generalizable across different interview styles and roles. For this reason, Iteration 3 is selected as the final version.
