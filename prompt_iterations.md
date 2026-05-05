@@ -20,7 +20,7 @@ Transcript:
 
 ### Input Used
 
-Both full transcripts passed in separately. Transcript 1 is approximately 900 words, Transcript 2 approximately 1100 words.
+Both full transcripts passed in separately. Transcript 1 and Transcript 2.
 
 ### Output (Transcript 1)
 
