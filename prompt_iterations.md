@@ -434,10 +434,10 @@ Iteration 3 resolves the major issues observed in earlier versions. Iteration 1 
 
 Iteration 3 addresses these by:
 
--> enforcing stronger grounding in transcript evidence.
-->expanding reasoning space for accurate role classification.
-->separating system behavior from task instructions for consistency.
+-> Enforcing stronger grounding in transcript evidence.
+-> Expanding reasoning space for accurate role classification.
+-> Separating system behavior from task instructions for consistency.
 
 Most importantly, this version performs well across both transcripts: it correctly identifies frontend specialization in Transcript 1 and captures operational and stakeholder complexity in Transcript 2 without introducing unsupported claims.
 
-While minor issues like generic phrasing remain, the prompt is sufficiently robust, consistent, and generalizable across different interview styles and roles. For this reason, Iteration 3 is selected as the final version.
+While minor issues like generic phrasing remain, the prompt is sufficiently robust, consistent, and generalizable across different interview styles and roles. For this reason.This final version balances structure, grounding, and generalization, making it suitable for evaluating both technical and non-technical interview transcripts without overfitting to a specific style.
